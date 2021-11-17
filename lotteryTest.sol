@@ -7,6 +7,9 @@ contract SimpleLottery {
     address public winner;
     uint public ticketingCloses;
 
+
+// must indicate duration at deployment
+
     function SimpleLottery (uint duration) public {
         ticketingCloses = now + duration;
     }
